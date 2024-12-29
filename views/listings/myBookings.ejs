@@ -1,0 +1,29 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+    <% if(bookedListings.length != 0){ %>
+        <h2>My Bookings</h2>
+    <% } %>
+    
+   <% if(bookedListings.length == 0){ %>
+    <h3>No bookings found!!</h3>
+   <% } %>
+
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1">
+        <% for(let listing of bookedListings){ %>
+            <a href="/listings/<%= listing.id %>" method="GET" class="listing-link" >
+                <div class="card col listing-card">
+                    <img src="<%= listing.image.url%> " class="card-img-top card-img" alt="Listing image">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b><%= listing.title%> </b><br>
+                       &#8377; <%= listing.price.toLocaleString("en-IN") %>
+                       <i class="tax-info">&nbsp;&nbsp;+18% GST</i>
+                      </p>
+                    </div>
+                </div>  
+            </a>
+              
+        <% } %>
+    </div>
+
+</body>

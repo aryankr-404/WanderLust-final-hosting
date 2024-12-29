@@ -1,0 +1,243 @@
+
+.plus-jakarta-sans- {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+/* Navbar */
+.fa-compass{
+    color: #fe424d;
+    font-size: 1.6rem;
+    margin-left: 0.7rem;;
+}
+.navbar{
+    background-color: white;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+.navbar-collapse{
+    background-color: white;
+}
+.nav-link{
+    color: #222222 !important;
+}
+.search-btn{
+    border: none !important;
+    background-color: #fe424d !important;
+    border-radius: 25px !important;
+    color: white !important;
+    padding: 0 1rem 0 1rem !important;
+}
+.search-btn:hover{
+    background-color: #fe424d !important;
+}
+.search-icon{
+  display: inline !important;
+  margin-right: 0.5rem !important;
+}
+.search-box{
+  border-radius: 25px !important;
+  padding: 0.5rem 3rem 0.5rem 3rem !important;
+  font-size: 1rem !important;
+}
+.login-btn{
+    margin-right: 0.5rem;
+    padding: 0rem 1rem 0rem 1rem !important;
+    background-color: white !important;
+    border-radius: 2rem !important;
+    border: none !important;
+}
+.login-btn:hover{
+    background-color: #ded9d9 !important;  
+}
+
+.logout-btn{
+    /* margin-right: 0.5rem; */
+    padding: 0rem 1rem 0rem 1rem !important;
+    background-color: white !important;
+    border-radius: 2rem !important;
+    border: none !important;
+}
+.logout-btn:hover{
+    background-color: #ded9d9 !important;  
+}
+.signup-btn{
+    background-color: #fe424d !important;
+    border-radius: 2rem !important;
+    border: none !important;
+    padding: 0rem 1rem 0rem 1rem !important;
+}
+.signup-btn a{
+    color: white !important;
+}
+
+/* Footer  */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-socials,.f-info-links,.f-info-para{
+    width: 100%;
+    margin-top: 0.8rem;
+}
+.f-info-socials i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+.f-info{
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Cards */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+
+}
+.card-img-top{
+    width: 100% ;
+    border-radius: 1rem !important;
+    object-fit: cover !important;
+    height: 20rem;
+    transition: 0.5s all ease-in-out !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text{
+    font-weight: 500 !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+.card-img{
+    transition: scale 0.3s !important;
+}
+.card-img:hover{
+    scale: 0.95;
+}
+
+/* Add Page */
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Edit Page */
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show Page */
+.show-edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+.show-btns{
+    display: flex;
+}
+.show-img{
+    height:40vh;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Filters */
+#filters{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.filter-icons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter{
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    opacity: 0.7;
+}
+.filter:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.filter p{
+    font-size: 0.8rem;
+}    
+.tax-info{
+    display: none;
+}
+.tax-toggle{
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Filter in small screen */
+.filter-icon-dropdown{
+    display: none;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+}
+.dropdown-menu{
+    width: 15rem !important;
+}
+.dropdown-toggle{
+    width: 15rem !important;
+}
+.filter-icons{
+    display: flex;
+}
+@media (max-width: 767px) {
+    .filter-icon-dropdown {
+      display: flex !important;
+    }
+    .filter-icons{
+        display: none !important;
+    }
+  }
+  @media (min-width: 767px) {
+    .filter-icon-dropdown {
+      display: none !important;   
+    }
+    .filter-icons{
+        display: flex  !important;
+    }
+  }
+
+#map{
+    height: 300px;
+    width: 100%;
+    border-radius: 25px;
+}

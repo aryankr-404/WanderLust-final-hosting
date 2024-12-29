@@ -1,0 +1,27 @@
+<% layout('/layouts/boilerplate') -%>
+<body>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+            <h2>Enter Booking Details</h2> <br>
+            <form action="/listings/<%= listing.id %>/booking" method="POST">
+                <div class="mb-3 ">
+                    <label for="dateInput">Choose Date</label>
+                    <input type="date" id="dateInput" name="dateInput" class="form-control required">
+                </div>
+
+                <div class="mb-3 ">
+                    <label for="name">Enter name</label>
+                    <input type="text" name="name" class="form-control required">
+                </div>
+
+                <div class="mb-3 ">
+                    <label for="phone">Enter Phone</label>
+                    <input type="number" name="phone" class="form-control required">
+                </div>
+
+                <button class="btn btn-success">Pay &nbsp &#8377;<%= listing.price %>
+
+            </form>
+        </div>
+    </div>
+</body>
