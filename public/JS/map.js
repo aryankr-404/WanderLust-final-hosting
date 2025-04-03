@@ -1,10 +1,8 @@
-const mapApiKey = "ef5f1edeaa754c1e85e086a12778b01c";
-// const mapApiKey =  process.env.GEOCODING_API_KEY;
+const mapApiKey =  process.env.GEOCODING_API_KEY;
 
 let map_location = document.querySelector(".mapLocation");
 let map_country = document.querySelector(".mapCountry");
 let map_address = map_location.textContent;
-console.log(map_location.textContent);
 
 function initializeMap() {
     const locationText = map_address;
